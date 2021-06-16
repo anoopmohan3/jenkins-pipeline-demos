@@ -8,8 +8,8 @@ pipeline {
                 script {
                      sh '''pwd '''
                     sh '''ls -l '''
-                     sh '''../ls -l '''
-                    //image = docker.build("1156/jdemos:apache", "--pull -f m4/Dockerfile1 m4")
+                    sh '''ls -l ./m4'''
+                     //image = docker.build("1156/jdemos:apache", "--pull -f m4/Dockerfile1 m4")
                     image = docker.build("1156/jdemos:apache", "./m4/Dockerfile1")
                    
                 }                
