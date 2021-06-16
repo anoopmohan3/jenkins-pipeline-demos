@@ -1,0 +1,5 @@
+From ubuntu:latest
+RUN apt-get update
+RUN apt-get install apache
+Expose port 80
+CMD ["/usr/sbin/apachectl","-DFOREGROUND"]
