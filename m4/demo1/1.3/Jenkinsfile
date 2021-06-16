@@ -10,7 +10,7 @@ pipeline {
                     sh '''ls -l '''
                     sh '''ls -l ./m4'''
                      //image = docker.build("1156/jdemos:apache", "--pull -f m4/Dockerfile1 m4")
-                    image = docker.build("1156/jdemos:apache", " -f ./Dockerfile1 ./m4")
+                    image = docker.build("1156/jdemos:apache", " -f .m4/Dockerfile1 m4")
                    
                 }                
             }
