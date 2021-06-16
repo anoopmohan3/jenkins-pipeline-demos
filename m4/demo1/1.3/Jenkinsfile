@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {                 
             steps {
                 script {
-                    image = docker.build("1156/jdemos:psod-pipelines", "--pull -f m4/Dockerfile m4")
+                    image = docker.build("1156/jdemos:apache", "--pull -f m4/Dockerfile1 m4")
                 }                
             }
         }   
