@@ -6,7 +6,7 @@ pipeline {
         stage('Build') {                 
             steps {
                 script {
-                     sh '''echo $pwd '''
+                     sh '''pwd '''
                     //image = docker.build("1156/jdemos:apache", "--pull -f m4/Dockerfile1 m4")
                     image = docker.build("1156/jdemos:apache", "--pull -f m4/Dockerfile1")
                    
