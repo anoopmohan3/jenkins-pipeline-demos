@@ -3,6 +3,5 @@ library identifier: 'jenkins-pipeline-demo-library@master',
 
 //crossPlatformBuild repoName: 'sixeyed/pi-psod-pipelines',
 crossPlatformBuild repoName: '1156/jdemos',
-                   linuxContext: 'm4'
-                   //linuxContext: 'm4', 
-                   //windowsContext: 'm4'
+                     linuxContext: 'm4', 
+                      windowsContext: 'm4'
