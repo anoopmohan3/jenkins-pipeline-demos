@@ -15,7 +15,9 @@ pipeline {
         }   
         stage('Smoke Test') {
             steps {
-              sh 'docker run sixeyed/pi:psod-pipelines'
+              //sh 'docker run sixeyed/pi:psod-pipelines'
+                container = sh 'docker run sixeyed/pi:psod-pipelines'
+                 container.stop()
             }
         }
     }
